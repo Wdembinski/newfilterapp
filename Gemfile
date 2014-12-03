@@ -45,3 +45,6 @@ end
 gem 'spree', '2.4.1'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
+
+gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
