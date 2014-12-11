@@ -1,5 +1,23 @@
 <header id="header" class="row" data-hook>
-  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
-  <%= render :partial => 'spree/shared/nav_bar' %>
-  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+	
+		<figure id="logo" class="columns six" data-hook><%= logo %></figure>
+		<%= render :partial => 'spree/shared/nav_bar' %>
+		<%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
 </header>
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+          $('#banner-fade').bjqs({
+            height      : 320,
+            width       : "100%",
+            responsive  : true
+          });
+        });
+	</script>
+    <div id="banner-fade">
+        <ul class="bjqs">
+          <li><img src="assets/spree/frontend/slider1.jpg" title="Automatically generated caption"></li>
+          <li><img src="assets/spree/frontend/slider2.jpg" title="Automatically generated caption"></li>
+          <li><img src="assets/spree/frontend/slider3.jpg" title="Automatically generated caption"></li>
+          <li><img src="assets/spree/frontend/slider4.jpg" title="Automatically generated caption"></li>
+        </ul>
+    </div>
