@@ -232,6 +232,9 @@ a.button {
 footer#footer {
   padding: 10px 0;
   border-top: $default_border;
+  background-color: black;
+  color: rgb(168, 168, 168);
+  padding: 0 0 0 10px;
 }
 
 /*--------------------------------------*/
@@ -299,7 +302,7 @@ nav #main-nav-bar {
   margin-top: 20px;
   border-bottom: $default_border;
   padding-bottom: 6px;
-
+  padding: 0 0 6px 12px;
   li {
 
     a {
@@ -487,7 +490,10 @@ ul#products {
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
-    background: #e8e8e8;
+    background: rgba(255, 255, 255, 0.95);
+                -webkit-box-shadow: 0px 56px 36px -60px #121D12;
+                -moz-box-shadow: 0px 56px 36px -60px #121D12;
+                -o-box-shadow: 0px 56px 36px -60px #121D12;
     border-radius:3px;
 
     a {
@@ -1077,7 +1083,8 @@ table.order-summary {
     width: 758px;
   }
   footer#footer {
-    width: 748px;
+    width: 100%;
+    background-color: black;
   }
   p[data-hook="use_billing"] {
     margin-top: -15px;
@@ -1363,3 +1370,6 @@ ol.bjqs-markers.h-centered{text-align: center;}
 ol.bjqs-markers li{display:inline;}
 ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+
