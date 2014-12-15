@@ -1345,9 +1345,20 @@ table.order-summary {
     text-align: center;
   }
 }
-header {
+
+
+
+
+
+
+/*============================YOUR STUFF*/
+
+
+
+
+header.row{
   
-  margin-top: 4%;
+  margin: 4% 0 240px;
   height: 100px;
   background-color:black;
   border-radius:4px;
@@ -1355,6 +1366,75 @@ header {
 
 
 }
+
+
+div.otherRow{
+  height:130px;
+
+  margin-bottom:30px;
+  ul{
+
+  display:inline;
+
+    li{
+
+      display:inline;
+      margin: 0 10px 0 10px;
+      float:left;
+
+
+
+      div.otherdiv{
+        height: 100px;
+        width: 290px;
+        background-color:rgba(255, 255, 255, 0.53);
+        h3{
+          color: #DC483A;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          text-transform: uppercase;
+          padding: 7px 10px;
+
+
+
+        }
+        img{
+          heigh:40px;
+          width:100px;
+        }
+        a{
+          display:block;
+          color: white;
+          background-color:black;
+          padding: 10px;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1em;
+          display: block;
+
+          i{
+          float:right;
+          color:white;
+
+          }
+        }
+
+      }
+
+
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Basic jQuery Slider essential styles */
@@ -1371,5 +1451,160 @@ ol.bjqs-markers li{display:inline;}
 ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
+@media only screen and (max-width: 960px) {
 
+  div.otherRow{
+    height:130px;
 
+    margin-bottom:30px;
+      ul{
+
+        display:inline;
+
+        li{
+          display:inline;
+          margin: 0 10px 0 10px;
+          float:left;
+
+          div.otherdiv{
+            height: 100px;
+            width: 231px;
+            background-color:rgba(255, 255, 255, 0.53);
+          h3{
+            color: #DC483A;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0px 5px;
+          }
+          img{
+            height:40px;
+            width:100px;
+          }
+          a{
+            display:block;
+            color: white;
+            background-color:black;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em;
+            display: block;
+            i{
+              margin-top:4px;
+              float:right;
+              color:white;
+              align-vertical:center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.row{
+
+    margin: 4% 0 285px;
+
+  }
+  div.otherRow{
+    height:130px;
+    text-align:center;
+    margin-bottom:30px;
+      ul{
+
+        display:inline;
+
+        li{
+          display:inline;
+          margin: 0 10px 0 10px;
+          float:left;
+
+          div.otherdiv{
+            height: 60px;
+            width: 120px;
+            background-color:rgba(255, 255, 255, 0.53);
+          h3{
+            color: #DC483A;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0px 5px;
+          }
+          img{
+            display:none;
+          }
+          a{
+            display:block;
+            color: white;
+            background-color:black;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            i{
+              margin-top: 3px;
+              float:right;
+              color:white;
+              align-vertical:center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  header.row{
+
+    margin: 4% 0 285px;
+
+  }
+  div.otherRow{
+    height:130px;
+
+    margin-bottom:30px;
+      ul{
+
+        display:inline;
+
+        li{
+          display:inline;
+          margin: 0 10px 0 10px;
+          float:left;
+
+          div.otherdiv{
+            height: 100px;
+            width: 80px;
+            background-color:rgba(255, 255, 255, 0.53);
+          h3{
+            color: #DC483A;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            padding: 0px 5px;
+            content: "Filter Program";
+          }
+          img{
+            height:40px;
+            width:100px;
+          }
+          a{
+            display:block;
+            color: white;
+            background-color:black;
+            padding: 10px;
+            font-family: 'Open Sans',   sans-serif;
+            font-size: 10px;
+            display: block;
+            i{
+              float:right;
+              color:white;
+              align-vertical:center;
+              margin-top:5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
