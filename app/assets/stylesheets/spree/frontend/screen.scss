@@ -166,6 +166,12 @@ fieldset {
 
 input[type="submit"], input[type="button"],
 input[type= "reset"], button, a.button {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   background-color: $link_text_color;
   background-image: none;
   text-shadow: none;
@@ -194,6 +200,7 @@ input[type= "reset"], button, a.button {
   &.large {
     padding: 7px 10px;
     font-size: $button_font_size + 2;
+    border-radius:8px;
   }
 
   &.gray {
@@ -206,6 +213,7 @@ input[type= "reset"], button, a.button {
     background-color: $body_text_color;
     border-color: $body_text_color;
     color: $layout_background_color;
+    border-radius:0px;
   }
 }
 
@@ -576,7 +584,15 @@ ul#products {
   #main-image {
     text-align: center;
     border: $default_border;
-    background-color: $product_background_color;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0px 56px 36px -60px #121D12;
+    -moz-box-shadow: 0px 56px 36px -60px #121D12;
+    -o-box-shadow: 0px 56px 36px -60px #121D12;
+    border-radius: 3px;
 
     img {
       min-height: 240px;
@@ -1399,7 +1415,7 @@ div.otherRow{
 
         }
         img{
-          heigh:40px;
+          height:40px;
           width:100px;
         }
         a{
